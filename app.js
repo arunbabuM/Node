@@ -8,7 +8,7 @@ const router = require('../Node/first/router/firstRouter');
 
 //arun.use(express.static("/public"));
 //arun.use(express.static(__dirname + '/public'));
-arun.use(express.static(path.join(__dirname, '/public'))); //
+arun.use(express.static(path.join(__dirname, '/public')));
 arun.set('views', './views');
 arun.set('view engine', 'ejs');
 

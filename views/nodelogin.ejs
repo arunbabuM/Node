@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Log In</title>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet"
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<style>
+body {
+   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+* {
+   box-sizing: border-box;
+}
+h1 {
+   text-align: center;
+}
+form {
+   border: 1px solid rgb(182, 180, 180);
+   padding: 20px;
+   width: 800px;
+   margin-left: 30%;
+}
+input {
+   width: 100%;
+   border: 1px solid #ddd;
+   padding: 5px 10px;
+   height: 45px;
+   margin: 0px 0px 20px;
+   border-radius: 4px;
+   box-sizing: border-box;
+   font-size: 17px;
+}
+button {
+   margin: 10px auto 30px;
+   display: table;
+   font-size: 20px;
+   padding: 10px 30px;
+   background-color: #4caf50;
+   border: none;
+   color: #fff;
+   border-radius: 4px;
+   cursor: pointer;
+}
+button:hover {
+   opacity: 0.8;
+}
+input[type="checkbox"] {
+   height: 16px;
+   width: 16px;
+   margin-right: 5px;
+   float: left;
+}
+.Social button.twitter-btn,
+.Social button.facebook-btn {
+   width: 100%;
+   font-size: 18px;
+   margin: 0px 0px 10px;
+}
+.Social button.twitter-btn {
+   background-color: #26abfd;
+}
+.Social button.facebook-btn {
+   background-color: #3f68be;
+}
+.Social {
+   border-top: 1px solid #ddd;
+   padding-top: 30px;
+   margin-top: 30px;
+}
+.Social button i {
+   margin-right: 5px;
+   font-size: 20px;
+}
+@media (max-width: 1000px) {
+   form {
+      width: 100%;
+      margin-left: 0px;
+   }
+}
+</style>
+</head>
+<body>
+<h1>Log In Page</h1>
+
+<form action="/dash" method="get">
+<div class="main-container"></div>
+<input type="text" placeholder="Username or email id" name="username" required/>
+<input type="password" placeholder="Enter password" name="pass" required/>
+<button type="submit">Login</button>
+<label class="Remember">
+<input type="checkbox" name="remember" />Remember me</label>
+<span class="forgotPass">Forgot password?</span>
+<div class="Social">
+<button type="submit" class="twitter-btn">
+<i class="fa fa-twitter" aria-hidden="true"></i> Login with Twitter
+</button>
+<button type="submit" class="facebook-btn">
+<i class="fa fa-facebook" aria-hidden="true"></i> Login with Facebook
+</button>
+</div>
+</form>
+
+
+</body>
+</html>

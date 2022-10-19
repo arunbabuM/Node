@@ -1,4 +1,3 @@
-
 const express = require('express');
 
 const path = require('path');
@@ -11,6 +10,14 @@ const router = require('../Node/first/router/firstRouter');
 arun.use(express.static(path.join(__dirname, '/public')));
 arun.set('views', './views');
 arun.set('view engine', 'ejs');
+arun.use(express.json({
+    limit: '50mb'
+}));
+arun.use(
+    express.urlencoded({
+        extended: false,
+    })
+);
 
 arun.use('/', router );
 

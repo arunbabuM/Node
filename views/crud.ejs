@@ -31,13 +31,13 @@
             <td><a href="" class="delete">Delete</a></td>
         </tr> -->
 
-      <% for(const rows of data){ %>
+      <% for(let rows of data){ %>
       <tr>
         <td><%= rows.id %>&ensp;</td>
         <td><%= rows.name %>&ensp;</td>
         <td><%= rows.age %>&ensp;</td>
         <td><%= rows.city %>&ensp;</td>
-        <td><a class="edit" <%= rows.ID %>&ensp;>Edit</a></td>
+        <td><a class="edit"  href="{rows.ID}" rows.ID >Edit</a></td>
         <td><a class="delete" <%= rows.ID %>&ensp;>Delete</a></td>
       </tr>
       <%} %>

@@ -10,37 +10,18 @@ module.exports = {
             })
         })
     },
-//     getPageMethod1 : (req,res) =>{
-//         console.log("Registartion Result>>>>>>",req.query)
 
-//         res.render('nodelogin')
-//     },
-//     getDashboard : (req,res)=>{
-//         console.log(req.body.username)
-//         console.log(req.body.pass)
-//         const username = req.body.username
-//         const pass = req.body.pass
-//         // const user = users.find((u) => {
-//         //     return u.username === username && u.pass === pass;
-//         //   });
+    getRegister :(req , res ,next ) => {
+        res.render('node');
+    }
+
+    // getRegister : (req , res , next) => {
+    //     Promise.all([model.getRegister()]).then(result => {
+    //         res.render('/first')
+    //     })
+    // }
+
         
-//            return res.render('dashboard',{data: username})
-      
-
-//     },
-
-
-
     
-//     getCrud : (req,res)=>{
-//         // if(error){
-//         //     console.error(error)
-//         //     return res.status(500).send(error)
-//         // }
-//         // res.render('crud',{rows});
-//         res.render("rows",{
-//             final: Object.values(result)
-//         })
-//     }
     
 }

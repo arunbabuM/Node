@@ -7,4 +7,6 @@ module.exports = class Model{
     static getAllData() {
         return  client.query('select * from crud_Table');
     }  
+
+    
 }

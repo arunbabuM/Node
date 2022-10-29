@@ -2,6 +2,14 @@ const express = require('express');
 
 const path = require('path');
 const arun = express();
+const {client} = require("./first/db.js")
+//For Data Base
+const { rootCertificates } = require('tls');
+
+
+client.connect();
+
+// Data Base Connection
 
 const router = require('../Node/first/router/firstRouter');
 
@@ -13,6 +21,9 @@ arun.set('view engine', 'ejs');
 arun.use(express.json({
     limit: '50mb'
 }));
+
+
+
 arun.use(
     express.urlencoded({
         extended: false,

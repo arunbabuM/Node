@@ -9,7 +9,7 @@
 </head>
 <body>
     <h3>Student Management System</h3>
-    <p  class="addbtn" ><a href="">Add User</a></p>
+    <p><a href="/adduser" class="addbtn">Add User</a></p>
     <table>
         <thead>
             <tr>
@@ -37,8 +37,9 @@
         <td><%= rows.name %>&ensp;</td>
         <td><%= rows.age %>&ensp;</td>
         <td><%= rows.city %>&ensp;</td>
-        <td><a class="edit"  href="{rows.ID}" rows.ID >Edit</a></td>
-        <td><a class="delete" <%= rows.ID %>&ensp;>Delete</a></td>
+        <td><a class="edit"  href="/edituser{rows.id}"  >Edit</a></td>
+        <td><a class="delete"  href="/deletuser{rows.id}"  >Delete</a></td>        
+        <!-- <td><a class="delete" <%= rows.ID %>&ensp;>Delete</a></td> -->
       </tr>
       <%} %>
     </tbody>
